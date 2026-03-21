@@ -1,12 +1,29 @@
 [project]
-name = "mops-lab2-versioning"
-version = "0.1.0"
-description = "Add your description here"
+name = "MLOps_course_AGH_lab_05"
+version = "1.0.0"
+description = ""
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = "==3.11.*"
 dependencies = [
-    "click>=8.3.1",
-    "dvc>=3.67.0",
-    "pandas>=3.0.1",
-    "pyarrow>=23.0.1",
+    "click",
+    "dvc",
+    "feature-engine",
+    "jupyter",
+    "mlflow",
+    "numpy",
+    "pandas",
+    "pyarrow",
+    "ruff",
+    "scikit-learn",
+    "torch",
 ]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cpu" }
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
