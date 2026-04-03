@@ -12,6 +12,7 @@ dependencies = [
     "mlflow",
     "numpy",
     "pandas",
+    "pandas-stubs~=2.3.3",
     "pyarrow",
     "ruff",
     "scikit-learn",
